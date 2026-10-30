@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Barlow Font Size Preview</title>
+
+  <!-- Barlow: Light (300), Regular (400), Semi-Bold (600), Bold (700) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --page-width: 760px;
+      --text-color: #222;
+      --muted: #777;
+      --line: #e5e5e5;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      padding: 32px 20px 56px;
+      color: var(--text-color);
+      background: #f7f7f7;
+      font-family: "Barlow", Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    main {
+      width: 100%;
+      max-width: var(--page-width);
+      margin: 0 auto;
+      padding: 32px;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+    }
+
+    .page-title {
+      margin: 0 0 8px;
+      font-size: 24px;
+      line-height: 1.2;
+      font-weight: 700;
+    }
+
+    .intro {
+      margin: 0 0 28px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.5;
+      font-weight: 400;
+    }
+
+    .sample {
+      padding: 22px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .sample h2 {
+      margin: 0 0 12px;
+      font-weight: 700;
+      line-height: 1.25;
+    }
+
+    .sample p {
+      margin: 0 0 12px;
+      line-height: 1.5;
+    }
+
+    .light { font-weight: 300; }
+    .regular { font-weight: 400; }
+    .semibold { font-weight: 600; }
+    .bold { font-weight: 700; }
+
+    .weight-label {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--muted);
+      font-family: inherit;  /* Barlow, same as the paragraph below */
+      font-size: inherit;    /* same size as the paragraph below */
+      font-weight: inherit;  /* same weight as the paragraph below */
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .sample-1 h2 { font-size: 16px; }
+    .sample-1 p { font-size: 14px; }
+
+    .sample-2 h2 { font-size: 18px; }
+    .sample-2 p { font-size: 16px; }
+
+    .sample-3 h2 { font-size: 20px; }
+    .sample-3 p { font-size: 18px; }
+
+    .sample-4 h2 { font-size: 22px; }
+    .sample-4 p { font-size: 20px; }
+
+    .sample-5 h2 { font-size: 24px; }
+    .sample-5 p { font-size: 22px; }
+
+    .sample-6 h2 { font-size: 26px; }
+    .sample-6 p { font-size: 24px; }
+
+    .sample-7 h2 { font-size: 28px; }
+    .sample-7 p { font-size: 26px; }
+
+    @media (max-width: 600px) {
+      body { padding: 14px 10px 32px; }
+      main { padding: 22px 18px; border-radius: 8px; }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1 class="page-title">Barlow — Font Size Preview</h1>
+    <p class="intro">
+      Headings are bold (700). Each sample paragraph is shown in Barlow Light (300),
+      Regular (400), Semi-Bold (600) and Bold (700) so you can compare the weights.
+    </p>
+
+    <section class="sample sample-1">
+      <h2>Heading 1 — Bold, 16px</h2>
+      <p class="light">
+        <span class="weight-label">Barlow Light · 14px</span>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+      <p class="regular">
+        <span class="weight-label">Barlow Regular · 14px</span>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+
+      <p class="semibold">
+        <span class="weight-label">Barlow Semi-Bold · 14px</span>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+
+      <p class="bold">
+        <span class="weight-label">Barlow Bold · 14px</span>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+    </section>
+
+    <section class="sample sample-2">
+      <h2>Heading 2 — Bold, 18px</h2>
+      <p class="light">
+        <span class="weight-label">Barlow Light · 16px</span>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+      <p class="regular">
+        <span class="weight-label">Barlow Regular · 16px</span>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+
+      <p class="semibold">
+        <span class="weight-label">Barlow Semi-Bold · 16px</span>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+
+      <p class="bold">
+        <span class="weight-label">Barlow Bold · 16px</span>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+    </section>
+
+    <section class="sample sample-3">
+      <h2>Heading 3 — Bold, 20px</h2>
+      <p class="light">
+        <span class="weight-label">Barlow Light · 18px</span>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+      <p class="regular">
+        <span class="weight-label">Barlow Regular · 18px</span>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+
+      <p class="semibold">
+        <span class="weight-label">Barlow Semi-Bold · 18px</span>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+
+      <p class="bold">
+        <span class="weight-label">Barlow Bold · 18px</span>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+    </section>
+
+    <section class="sample sample-4">
+      <h2>Heading 4 — Bold, 22px</h2>
+      <p class="light">
+        <span class="weight-label">Barlow Light · 20px</span>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+
+      <p class="regular">
+        <span class="weight-label">Barlow Regular · 20px</span>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+
+      <p class="semibold">
+        <span class="weight-label">Barlow Semi-Bold · 20px</span>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+
+      <p class="bold">
+        <span class="weight-label">Barlow Bold · 20px</span>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+    </section>
+
+    <section class="sample sample-5">
+      <h2>Heading 5 — Bold, 24px</h2>
+      <p class="light">
+        <span class="weight-label">Barlow Light · 22px</span>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+
+      <p class="regular">
+        <span class="weight-label">Barlow Regular · 22px</span>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+
+      <p class="semibold">
+        <span class="weight-label">Barlow Semi-Bold · 22px</span>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+
+      <p class="bold">
+        <span class="weight-label">Barlow Bold · 22px</span>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+    </section>
+
+    <section class="sample sample-6">
+      <h2>Heading 6 — Bold, 26px</h2>
+      <p class="light">
+        <span class="weight-label">Barlow Light · 24px</span>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+
+      <p class="regular">
+        <span class="weight-label">Barlow Regular · 24px</span>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+
+      <p class="semibold">
+        <span class="weight-label">Barlow Semi-Bold · 24px</span>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+
+      <p class="bold">
+        <span class="weight-label">Barlow Bold · 24px</span>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+    </section>
+
+    <section class="sample sample-7">
+      <h2>Heading 7 — Bold, 28px</h2>
+      <p class="light">
+        <span class="weight-label">Barlow Light · 26px</span>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+
+      <p class="regular">
+        <span class="weight-label">Barlow Regular · 26px</span>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+
+      <p class="semibold">
+        <span class="weight-label">Barlow Semi-Bold · 26px</span>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+
+      <p class="bold">
+        <span class="weight-label">Barlow Bold · 26px</span>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
